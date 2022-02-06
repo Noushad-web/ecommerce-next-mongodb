@@ -11,9 +11,9 @@ const HeroCarousel = () => {
       totalSlides={3}
     >
       <Slider>
-        <Slide index={0}>I am the first Slide.</Slide>
-        <Slide index={1}>I am the second Slide.</Slide>
-        <Slide index={2}>I am the third Slide.</Slide>
+        <Slide index={0} sx="background-color: red;">I am the first Slide.</Slide>
+          <Slide index={1} sx="background-color: blue;">I am the second Slide.</Slide>
+          <Slide index={2} sx="background-color: yellow;">I am the third Slide.</Slide>
       </Slider>
       <ButtonBack>Back</ButtonBack>
       <ButtonNext>Next</ButtonNext>
