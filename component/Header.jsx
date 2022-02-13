@@ -24,7 +24,7 @@ const Header = () => {
   }
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor: '#6F8FAF'}}>
       <Container maxWidth="xl">
         <Stack direction={'row'} justifyContent="center" alignItems={'center'}>
           <Typography variant='h6' marginRight={'auto'}>

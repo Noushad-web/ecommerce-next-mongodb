@@ -6,8 +6,6 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { getLimitedWords } from '../utils/functions';
 export default function ProductCard({product}) {
-
-  console.log(product)
   const
   {
     category,
