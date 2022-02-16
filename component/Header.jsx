@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Link from 'next/link';
 import { Divider, Stack } from '@mui/material';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Jeans', 'Guys', 'What We\'re about', 'login', 'cart' ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Header = () => {
@@ -24,16 +24,17 @@ const Header = () => {
   }
 
   return (
-    <AppBar position="static" sx={{backgroundColor: '#6F8FAF'}}>
+    <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
       <Container maxWidth="xl">
         <Stack direction={'row'} justifyContent="center" alignItems={'center'}>
-          <Typography variant='h6' marginRight={'auto'}>
+          <Typography variant='h6' color={'#1c2121'} textTransform="uppercase" fontWeight='800' letterSpacing='1px' marginRight={'auto'}>
             <Link href="#">
-              Logo
+              Hollister
             </Link>
           </Typography>
+          
           {pages.map((page) => (
-            <MenuItem key={page} sx="padding: 16px">
+            <MenuItem key={page} sx="padding: 16px; color: #1c2121;text-transform: uppercase; font-weight: 800;">
               <Link href={`/${getLowerCase(page)}`}>
                 {page}
               </Link>
