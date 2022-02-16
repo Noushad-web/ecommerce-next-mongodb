@@ -34,16 +34,16 @@ export default function Home(props) {
 
         <Banner />
         
-        <MultipleCarousel products={products.slice(0, 5)} />
+        <MultipleCarousel products={products.slice(0, 15)} />
 
-        {/* <Box sx={{ display: "flex", flexWrap: "wrap", gap: "3rem" }}>
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: "3rem" }}>
           {products.map((product, index) => {
             if(index < 20) return <ProductCard product={product} key={index} />;
           })}
 
-        </Box> */}
-        {/* <Pagination sx={{ maxWidth: 'max-content', margin: '1.5rem auto' }}
-          count={products.length} variant="outlined" shape="rounded" onChange={handleChange} /> */}
+        </Box>
+        <Pagination sx={{ maxWidth: 'max-content', margin: '1.5rem auto' }}
+          count={products.length} variant="outlined" shape="rounded" onChange={handleChange} />
       </Container>
     </Layout>
   );
